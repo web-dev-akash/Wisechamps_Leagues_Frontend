@@ -1,0 +1,24 @@
+header {
+    margin: 10px;
+    text-align: center;
+}
+
+.leagueName {
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #9c9c9c;
+}
+
+.leagues-header,
+.leagues-header .active,
+.leagues-header .active img {
+    transition: all 0.5s ease-in-out;
+}
+
+.leagues-header .active {
+    padding: 15px 10px;
+}
+
+.leagues-header .active img {
+    transform: scale(1.2);
+}

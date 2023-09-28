@@ -1,0 +1,183 @@
+.placeCenter,
+.placeCenterNew {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.placeCenterNew p {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.spinner::after {
+    margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.promoted,
+.demoted {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px
+}
+
+.promoted {
+    background-color: #d4ffd0;
+}
+
+.demoted {
+    background-color: #ffd0d0;
+}
+
+.promotion {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.promotion p {
+    overflow: hidden;
+    text-align: center;
+    color: #000;
+}
+
+.promotion p:before,
+.promotion p:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.promotion p:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.promotion p:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.demotion {
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.demotion p {
+    overflow: hidden;
+    text-align: center;
+    color: #000;
+}
+
+.demotion p:before,
+.demotion p:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.demotion p:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.demotion p:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.LeftDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.rankLogo {
+    position: absolute;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo3 {
+    filter: invert(40%) hue-rotate(-10deg)
+}
+
+.top3 {
+    margin-left: 40px;
+}
+
+.name {
+    margin-left: -20px;
+    font-weight: 600;
+}
+
+// .top3Div {
+//     background-color: #d4ffd0;
+// }
+
+.myEmailDiv {
+    background-color: #34a4ff;
+    color: white;
+}
+
+// .othersDiv {
+//     filter: blur(4px);
+// }
