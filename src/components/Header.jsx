@@ -44,7 +44,7 @@ export const Header = () => {
   useEffect(() => {
     setTimeout(() => {
       setHeaderClass("leagues-header");
-    }, 1000);
+    }, 500);
   });
 
   return (
